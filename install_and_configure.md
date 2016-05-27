@@ -52,6 +52,7 @@ See: <http://gnocchi.xyz/install.html>
 git clone https://github.com/openstack/gnocchi.git
 mkvirtualenv gnocchi
 cd gnocchi
+(if mac) brew install postgresql
 pip install -e .[file,postgresql,test]
 ./run-tests.sh
 ```
