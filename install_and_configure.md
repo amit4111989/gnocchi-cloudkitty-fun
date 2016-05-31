@@ -158,7 +158,7 @@ Output:
 ```bash
 gnocchi-upgrade --config-dir=etc/gnocchi/
 echo '\dt' | psql -U gnocchi gnocchi
-l /usr/local/var/lib/gnocchi/
+ls -la /usr/local/var/lib/gnocchi/
 ```
 
 Output:
