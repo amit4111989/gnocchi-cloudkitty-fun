@@ -222,6 +222,12 @@ Output:
 > ```
 
 
+8.5 Create Resource in Gnocchi
+
+```
+curl -X POST -H "x-roles: admin" -H "Content-Type: application/json" -d '{"id":"75C44741-CC60-4033-804E-2D3098C7D2E9", "project_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D", "user_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D"}' http://127.0.0.1:8041/v1/resource/generic | python -mjson.tool
+```
+
 ### 9. Install Gnocchi client
 
 ```bash
