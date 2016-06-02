@@ -222,10 +222,32 @@ Output:
 > ```
 
 
-8.5 Create Resource in Gnocchi
+### 8.5 Create Resource in Gnocchi
 
 ```
 curl -X POST -H "x-roles: admin" -H "Content-Type: application/json" -d '{"id":"75C44741-CC60-4033-804E-2D3098C7D2E9", "project_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D", "user_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D"}' http://127.0.0.1:8041/v1/resource/generic | python -mjson.tool
+```
+
+Output : 
+
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   602  100   452  100   150   1753    581 --:--:-- --:--:-- --:--:--  1758
+{
+    "created_by_project_id": null,
+    "created_by_user_id": null,
+    "ended_at": null,
+    "id": "75c44741-cc60-4033-804e-2d3098c7d2e9",
+    "metrics": {},
+    "original_resource_id": "75C44741-CC60-4033-804E-2D3098C7D2E9",
+    "project_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D",
+    "revision_end": null,
+    "revision_start": "2016-06-02T09:40:00.396907+00:00",
+    "started_at": "2016-06-02T09:40:00.396764+00:00",
+    "type": "generic",
+    "user_id": "BD3A1E52-1C62-44CB-BF04-660BD88CD74D"
+}
 ```
 
 ### 9. Install Gnocchi client
